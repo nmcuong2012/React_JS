@@ -35,3 +35,65 @@ code {
   display: inline-flex;
   line-height: 4rem;
 }
+.App {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.glasses-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.glasses-list img {
+  cursor: pointer;
+  max-width: 100px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.glasses-list img:hover {
+  border-color: #007bff;
+}
+
+.glasses-viewer {
+  margin-top: 20px;
+}
+.viewer{
+  position: relative;
+}
+.selected-glass {
+  position: absolute;
+    top: 25%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    opacity: 0.7;
+}
+.model{
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.glass-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.glass-icon-card {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.glass-icon-description {
+  margin-top: 10px;
+}
